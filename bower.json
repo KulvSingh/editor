@@ -1,0 +1,34 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "Angular Editor",
+  "main": "dist/editor.js",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "angular2",
+    "node",
+    "express",
+    "bootstrap",
+    "postgresql"
+  ],
+  "authors": [
+    {
+      "name": "Kulvinder Singh",
+      "email": "singh.kulvinder@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "typings"
+  ],
+  "devDependencies": {
+    "traceur-runtime": "~0.0.90"
+  }
+}
