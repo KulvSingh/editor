@@ -10,16 +10,40 @@ import {
     onInit,
     SkipSelf,
     Attribute,
-    Optional
+    Optional,
+    Inject,
+    forwardRef
 } from 'angular2/angular2';
 
-import {LineCmp} from 'app/line';
+
+// Annotation section
+@Component({
+    selector: 'editor-line',
+    lifecycle: [LifecycleEvent.onInit]
+})
+@View({
+    templateUrl: '../pages/line.html',
+    encapsulation: ViewEncapsulation.NONE,
+    directives: []
+})
+export class LineCmp {
+
+    constructor(@Host(forwardRef(()=> EditorComp)) ed:EditorCmp) {
+        console.log(ed.name);
+
+    }
+    onInit() {
+
+    }
+
+}
+
 
 // Annotation section
 @Component({
     selector: 'editor',
     properties: ['name'],
-    lifecycle: [onInit]
+    lifecycle: [LifecycleEvent.onInit]
 })
 @View({
     templateUrl: '../pages/ed.html',
@@ -40,5 +64,5 @@ export class EditorCmp {
 
 }
 
-
+class Type  extends 
 bootstrap(EditorCmp);

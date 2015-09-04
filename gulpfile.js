@@ -34,8 +34,8 @@ gulp.task('compile-ts', function () {
                 target: 'ES5',
                 emitDecoratorMetadata: true,
                 experimentalDecorators: true,
-                declarationFiles: false,
-                noExternalResolve: true
+                noImplicitAny: false,
+                declaration:false
             }));
 
     tsResult.dts
