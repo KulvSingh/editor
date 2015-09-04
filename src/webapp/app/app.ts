@@ -64,5 +64,8 @@ export class EditorCmp {
 
 }
 
+
+changed
+
 class Type  extends 
 bootstrap(EditorCmp);

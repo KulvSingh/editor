@@ -67,6 +67,7 @@ var EditorCmp = (function () {
     return EditorCmp;
 })();
 exports.EditorCmp = EditorCmp;
+changed;
 var Type = (function (_super) {
     __extends(Type, _super);
     function Type() {
